@@ -1,0 +1,38 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bagGradient4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4facfe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00f2fe;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="400" fill="#f0f8ff"/>
+  
+  <!-- Detail view - close up of label -->
+  <rect x="50" y="80" width="300" height="240" fill="url(#bagGradient4)" rx="15"/>
+  
+  <!-- Main label area -->
+  <rect x="70" y="100" width="260" height="120" fill="#FF6B35" rx="8"/>
+  
+  <!-- Large text -->
+  <text x="200" y="130" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="white">SIMBA</text>
+  <text x="200" y="160" font-family="Arial, sans-serif" font-size="32" font-weight="bold" text-anchor="middle" fill="white">POWER</text>
+  <text x="200" y="190" font-family="Arial, sans-serif" font-size="28" font-weight="bold" text-anchor="middle" fill="white">42.5N</text>
+  
+  <!-- Quality marks -->
+  <circle cx="120" cy="250" r="15" fill="#27ae60"/>
+  <text x="120" y="255" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="white">✓</text>
+  <text x="120" y="275" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="white">QUALITY</text>
+  
+  <circle cx="200" cy="250" r="15" fill="#e74c3c"/>
+  <text x="200" y="257" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">🦁</text>
+  <text x="200" y="275" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="white">SIMBA</text>
+  
+  <circle cx="280" cy="250" r="15" fill="#3498db"/>
+  <text x="280" y="255" font-family="Arial, sans-serif" font-size="10" font-weight="bold" text-anchor="middle" fill="white">42.5</text>
+  <text x="280" y="275" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="white">STRENGTH</text>
+  
+  <!-- Bottom -->
+  <text x="200" y="340" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#666">DETAIL VIEW</text>
+</svg>

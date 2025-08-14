@@ -1,0 +1,33 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bagGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#764ba2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#667eea;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="400" fill="#f1f3f4"/>
+  
+  <!-- Side view of cement bag -->
+  <rect x="100" y="60" width="200" height="280" fill="url(#bagGradient2)" rx="8"/>
+  
+  <!-- Side panel -->
+  <rect x="110" y="80" width="180" height="60" fill="#FF6B35" rx="3"/>
+  
+  <!-- Text -->
+  <text x="200" y="105" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">SIMBA</text>
+  <text x="200" y="125" font-family="Arial, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="white">42.5N</text>
+  
+  <!-- Side details -->
+  <text x="200" y="170" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">HIGH STRENGTH</text>
+  <text x="200" y="190" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">CEMENT</text>
+  
+  <!-- Logo -->
+  <circle cx="200" cy="230" r="20" fill="#FF6B35"/>
+  <text x="200" y="237" font-family="Arial, sans-serif" font-size="16" text-anchor="middle" fill="white">🦁</text>
+  
+  <!-- Bottom info -->
+  <text x="200" y="280" font-family="Arial, sans-serif" font-size="10" text-anchor="middle" fill="white">50KG</text>
+  <text x="200" y="300" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="white">SIDE VIEW</text>
+</svg>

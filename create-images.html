@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Generate Product Images</title>
+</head>
+<body>
+    <canvas id="canvas" width="400" height="400" style="border: 1px solid #ccc;"></canvas>
+    
+    <script>
+        function createProductImage(text, bgColor, textColor, filename) {
+            const canvas = document.getElementById('canvas');
+            const ctx = canvas.getContext('2d');
+            
+            // Clear canvas
+            ctx.clearRect(0, 0, 400, 400);
+            
+            // Background gradient
+            const gradient = ctx.createLinearGradient(0, 0, 400, 400);
+            gradient.addColorStop(0, bgColor);
+            gradient.addColorStop(1, '#ffffff');
+            ctx.fillStyle = gradient;
+            ctx.fillRect(0, 0, 400, 400);
+            
+            // Draw cement bag shape
+            ctx.fillStyle = '#8B4513';
+            ctx.fillRect(50, 50, 300, 300);
+            
+            // Draw brand logo area
+            ctx.fillStyle = '#FF6B35';
+            ctx.fillRect(75, 75, 250, 100);
+            
+            // Add text
+            ctx.fillStyle = textColor;
+            ctx.font = 'bold 24px Arial';
+            ctx.textAlign = 'center';
+            ctx.fillText('SIMBA POWER', 200, 130);
+            ctx.font = 'bold 32px Arial';
+            ctx.fillText('42.5N', 200, 165);
+            
+            // Add cement type
+            ctx.fillStyle = '#333';
+            ctx.font = '16px Arial';
+            ctx.fillText('PORTLAND CEMENT', 200, 220);
+            ctx.fillText('50KG NET', 200, 250);
+            
+            // Add lion logo placeholder
+            ctx.fillStyle = '#FF6B35';
+            ctx.beginPath();
+            ctx.arc(200, 290, 30, 0, 2 * Math.PI);
+            ctx.fill();
+            
+            ctx.fillStyle = '#fff';
+            ctx.font = 'bold 20px Arial';
+            ctx.fillText('🦁', 200, 300);
+            
+            // Download image
+            const link = document.createElement('a');
+            link.download = filename;
+            link.href = canvas.toDataURL();
+            link.click();
+        }
+        
+        // Create different views
+        setTimeout(() => createProductImage('Main View', '#667eea', '#fff', 'simba-power-main.jpg'), 500);
+        setTimeout(() => createProductImage('Side View', '#764ba2', '#fff', 'simba-power-1.jpg'), 1000);
+        setTimeout(() => createProductImage('Back View', '#f093fb', '#333', 'simba-power-2.jpg'), 1500);
+        setTimeout(() => createProductImage('Detail View', '#f5576c', '#fff', 'simba-power-3.jpg'), 2000);
+        setTimeout(() => createProductImage('Stack View', '#4facfe', '#fff', 'simba-power-4.jpg'), 2500);
+    </script>
+</body>
+</html>
